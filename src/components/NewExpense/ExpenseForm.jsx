@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { useState } from "react";
 import "./ExpenseForm.css";
 
 class ExpenseForm extends Component {
@@ -81,16 +80,5 @@ class ExpenseForm extends Component {
     );
   }
 }
-// const ExpenseForm = (props) => {
-//     const [titleValue, setTitleValue] = useState('')
-//     const [amountValue, setAmountValue] = useState('')
-//     const [dateValue, setDateValue] = useState('')
-
-//
-
-//     return (
-//
-//     )
-// }
 
 export default ExpenseForm;

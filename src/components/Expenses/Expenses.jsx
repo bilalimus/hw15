@@ -1,20 +1,27 @@
-import './Expenses.css'
-import ExpenseItem from './ExpenseItem'
+import "./Expenses.css";
+import ExpenseItem from "./ExpenseItem";
+import { Component } from "react";
 
+class Expenses extends Component {
+  
 
-function Expenses(props) {
+  render() {
     return (
-        <div className='expenses'>
-            {props.expenses.map((element) => {
+      <div className="expenses">
+        {this.props.expenses.map((element) => {
           return (
-          <ExpenseItem
-          key={element.id}
-          title={element.title}
-          date={element.date}
-          amount={element.amount} />
-          )
+            <ExpenseItem
+              key={element.id}
+              title={element.title}
+              date={element.date}
+              amount={element.amount}
+            />
+          );
         })}
-        </div>
+      </div>
     );
+  }
 }
+
+
 export default Expenses;
